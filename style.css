@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to top, rgb(136, 16, 16), rgb(199, 0, 0), rgb(255, 83, 83));
+}
+
+#body-global{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+    margin: 0 10px 0 10px;
+    background-image: linear-gradient(to top, rgb(255, 140, 159), rgb(255, 151, 169), pink);
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+}
+
+h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+#formulario label{
+    margin-bottom: 5px;
+}
+
+#botao{
+    border: 0;
+    border-radius: 15px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(88, 0, 0);
+}
+
+#botao:hover{
+    background-color: rgb(136, 16, 16);
+    cursor: pointer;
+}
+#altura{
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 15px;
+    background-color: rgb(219, 219, 219);
+}
+
+#peso{
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    border: 0;
+    border-radius: 15px;
+    background-color: rgb(219, 219, 219);
+}
+
+#altura::placeholder, #peso::placeholder{
+    color: rgb(165, 165, 165);
+    padding-left: 5px;
+}
+
+#resultado{
+    margin-bottom: 10px;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultado p{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+footer{
+    padding: 20px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color:white
+}
+
+footer a{
+    text-decoration: none;
+    color:blue
+}
+
+@media(max-width:500px){
+    #container{
+        width: 300px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #resultado{
+        max-width: 250px;
+    }
+
+    #resultado p{
+    margin: 5px;
+    font-size: 18px;
+}
+}
+
+#bola{
+    font-size: 50px;
+}
