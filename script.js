@@ -22,6 +22,7 @@ function calcular(event){
 
     if(peso === '' || altura === ''){
         resultado.innerHTML = "<p>Altura ou peso não foi preenchida !!!</p>"
+        resultado.style.background = "none"
     }
 
     imc = peso / (altura * altura)
@@ -48,4 +49,5 @@ function calcular(event){
     
     document.getElementById("peso").value = ''
     document.getElementById("altura").value = ''
+
 }
